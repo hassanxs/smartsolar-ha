@@ -1,0 +1,44 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Connect SmartSolar",
+        "description": "Enter the API key for your inverter. Generate it in the SmartSolar iSetting panel by enabling API Access.",
+        "data": {
+          "api_key": "API key"
+        }
+      },
+      "reauth_confirm": {
+        "title": "Re-enter SmartSolar API key",
+        "description": "The SmartSolar API key was rejected. Enter a new key for this inverter.",
+        "data": {
+          "api_key": "API key"
+        }
+      }
+    },
+    "error": {
+      "invalid_auth": "The API key is invalid, or API access is disabled for this device.",
+      "cannot_connect": "Could not reach the SmartSolar server.",
+      "rate_limited": "The device is temporarily rate-limited by SmartSolar. Try again in an hour.",
+      "unknown": "Unexpected response from the SmartSolar API."
+    },
+    "abort": {
+      "already_configured": "This inverter is already configured.",
+      "reauth_successful": "The API key was updated.",
+      "wrong_device": "That API key belongs to a different inverter."
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "title": "SmartSolar options",
+        "description": "SmartSolar allows 30 requests per minute per device; exceeding it disables API access for an hour, and repeated violations disable it permanently. Usage, faults and settings are polled on fixed slow schedules.",
+        "data": {
+          "scan_interval": "Real-time status polling interval",
+          "hide_grid_alerts": "Hide grid alerts in the fault report",
+          "enable_control": "Expose inverter settings as controls"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "domain": "smartsolar",
+  "name": "SmartSolar",
+  "codeowners": ["@hassanxs"],
+  "config_flow": true,
+  "documentation": "https://github.com/hassanxs/smartsolar-ha",
+  "integration_type": "device",
+  "iot_class": "cloud_polling",
+  "issue_tracker": "https://github.com/hassanxs/smartsolar-ha/issues",
+  "requirements": [],
+  "version": "0.1.0"
+}
